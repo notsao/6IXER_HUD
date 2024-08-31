@@ -1,0 +1,11 @@
+{
+  "name": "6ixer_hud",
+  "version": "1.0.0",
+  "description": "this is a hud for a fivem server using qbcore framework",
+  "main": "script.js",
+  "scripts": {
+    "test": "testtt"
+  },
+  "author": "notsao",
+  "license": "ISC"
+}
