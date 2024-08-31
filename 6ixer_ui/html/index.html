@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>QBCore HUD</title>
+</head>
+<body>
+    <div id="hud">
+        <div id="playerserver_data">
+            <div class='server_info_container'> 
+                <div id="server_info">
+                    <div class="server_name"> 6IXER </div> <div id="server_img"> <!-- This will house the server logo--> </div>
+                </div>    
+            </div>
+            <div id="server_data">
+                <div id="user_id"> <!-- players session id--> </div>
+                <div id="server_player_count"> <!-- add server player count-->  </div>
+            </div>
+            <div id="player_info">
+                <div id="bank"></div>
+                <div id="cash"></div>
+                <div id="job"></div>
+            </div>
+        </div>
+        
+        <div id="minimap"></div>
+        <div id="player_data">
+            <div class="player_data_item" id="health">
+                <img src="assets/health.svg" alt="Health Icon" class="player_icon">
+            </div>
+            <div class="player_data_item" id="armor">
+                <img src="assets/armour.svg" alt="Armor Icon" class="player_icon">
+            </div>
+            <div class="player_data_item" id="hunger">
+                <img src="assets/hunger.svg" alt="Hunger Icon" class="player_icon">
+            </div>
+            <div class="player_data_item" id="thirst">
+                <img src="assets/thirst.svg" alt="Thirst Icon" class="player_icon">
+            </div>
+            <div class="player_data_item" id="stamina">
+                <img src="assets/stamina.svg" alt="Stamina Icon" class="player_icon">
+            </div>
+            <div class="player_data_item" id="stress">
+                <img src="assets/stress.svg" alt="Stress Icon" class="player_icon">
+            </div>
+        </div>
+        
+        <div id="hotbar">
+            <div id="item1"> </div>
+            <div id="item2"> </div>
+            <div id="item3"> </div>
+            <div id="item4"> </div>
+            <div id="item5"> </div>
+        </div>
+        <div id="keybinds"> </div>
+        <div id="spedometer"> </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
