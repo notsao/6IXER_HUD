@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>QBCore HUD</title>
+    <title>6IXER HUD</title>
 </head>
 <body>
     <div id="hud">
         <div id="playerserver_data">
             <div class='server_info_container'> 
                 <div id="server_info">
-                    <div class="server_name"> 6IXER </div> <div id="server_img"> <!-- This will house the server logo--> </div>
+                    <div class="server_name"> 6IXER </div> 
+                    <div id="server_data">
+                        <div id="user_id">  </div>
+                        <div id="server_player_count"> </div>
+                    </div>
                 </div>    
             </div>
             <div id="server_data">
-                <div id="user_id"> <!-- players session id--> </div>
-                <div id="server_player_count"> <!-- add server player count-->  </div>
+                <div id="user_id">  </div>
+                <div id="server_player_count"> </div>
             </div>
             <div id="player_info">
-                <div id="bank"></div>
-                <div id="cash"></div>
-                <div id="job"></div>
+                <div class='player_info_item'> <img src="assets/work.svg" class="player_info_svg"> <div id="job"> </div> </div>
+                <div class='player_info_item'> <img src="assets/cash.svg"  class="player_info_svg"> <div id="cash"> </div> </div>
+                <div class='player_info_item'> <img src="assets/bank.svg"  class="player_info_svg"> <div id="bank"> </div> </div>
             </div>
         </div>
         

@@ -19,27 +19,26 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #ff4d4d; /* Red theme */
+     /* Red theme */
     padding: 15px;
     border-radius: 10px;
     color: white;
     text-align: right;
-    width: 1/4;
-}
-
-#player_info div {
-    padding: 3px;
 }
 
 #server_info {
+    background-color: #ff4d4d;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    border-radius: 9px;
+    width: 1/4;
 }
 
 .server_name {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 #server_img {
@@ -52,6 +51,7 @@ body {
 #server_data {
     display: flex;
     flex-direction: row;
+    
 }
 
 #user_id {
@@ -62,11 +62,49 @@ body {
     padding: 3px;
 }
 
+#player_info {
+    background-color: #ff4d4d;
+    display: flex;
+    flex-direction : column;
+    border-radius: 9px;
+    width: 150px;
+    float: right;
+    padding: 8px;
+}
+
+.player_info_item {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    padding:5px;
+    align-items: center;
+}
+
+#job {
+    font-size: 15px;
+}
+
+#bank {
+    font-size: 15px;
+}
+
+#cash {
+    font-size: 15px;
+}
+
+
+
+.player_info_svg {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin-right: 5px;  
+}
 
 /* Minimap - bottom left */
 #minimap {
     position: absolute;
-    bottom: 100px; /* Adjusted to allow space above the player data */
+    bottom: 80px; /* Adjusted to allow space above the player data */
     left: 10px;
     background-color: #ff6666; /* Lighter red theme */
     padding: 15px;
@@ -96,19 +134,58 @@ body {
 .player_data_item {
     width: 50px;
     height: 50px;
-    background-color: #ff4d4d; /* Red theme */
-    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px; /* Padding inside the container */
     box-sizing: border-box; /* Ensure padding does not affect the total width and height */
+    transition: all 0.1s ease-in-out;
+}
+
+#health {
+    border: solid red;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-width 1s ease-in-out, border-color 1s ease-in-out;
+
+}
+
+#armor {
+    border: solid grey;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+#thirst {
+    border: solid blue;
+    border-radius: 12px;
+
+}
+
+#hunger {
+    border: solid rgb(1, 169, 32);
+    border-radius: 12px;
+
+}
+
+#stamina {
+    border: solid rgb(234, 155, 46);
+    border-radius: 12px;
+
+}
+
+#stress {
+    border: solid rgb(192, 66, 87);
+    border-radius: 12px;
+
 }
 
 /* SVG icon size */
 .player_icon {
-    width: 40px; /* Adjust size to fit within padding */
-    height: 40px;
+    width: 30px; /* Adjust size to fit within padding */
+    height: 30px;
     display: block;
 }
 
