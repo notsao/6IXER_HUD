@@ -1,6 +1,9 @@
+
+
 -- Function to gather and send player data
 function SendPlayerData(source)
-    local PlayerData = QBCore.Functions.GetPlayer(source).PlayerData
+    local QBCore = exports['qb-core']:GetCoreObject()
+    local PlayerData = QBCore.Functions.GetPlayerData()
     
     -- Gather the necessary data
     local health = GetEntityHealth(GetPlayerPed(source))
@@ -12,6 +15,16 @@ function SendPlayerData(source)
     local cash = PlayerData.money['cash'] or 0
     local bank = PlayerData.money['bank'] or 0
     local playerId = PlayerData.citizenid
+
+    print(health)
+    print(armour)
+    print(hunger)
+    print(thirst)
+    print(job)
+    print(jobLabel)
+    print(cash)
+    print(bank)
+    print(playerId)
 
     -- Send the data to the NUI (JavaScript side)
     SendNUIMessage({

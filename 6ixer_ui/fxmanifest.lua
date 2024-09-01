@@ -5,8 +5,9 @@ ui_page 'html/index.html'
 
 files {
     'html/index.html',
-    'html/style.css',
-    'html/script.js'
+    'html/styles.css',
+    'html/script.js',
+    'html/assets/*',
 }
 
 client_scripts {

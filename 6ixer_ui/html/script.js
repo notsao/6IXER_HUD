@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update the HUD and player data items with the received data
             updateHUD(data);
             updatePlayerDataItem(data);
+            console.log(data)
         }
     });
 });
